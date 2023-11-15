@@ -5,3 +5,10 @@ D:\Учёба\Предметы\Тестирование и отладка про
 D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Test\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Test\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Test\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\1 Практическая\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

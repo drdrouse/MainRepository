@@ -20,7 +20,7 @@ namespace ConsoleApp1
                 string path = "D:\\Учёба\\Предметы\\Тестирование и отладка программного обеспечения\\Параметры.txt";
                 if (File.Exists(path) == false)
                 {
-                    throw new FileException("Ты чё дурак, такого файла нет!!!");
+                    throw new FileException("Файла не существует");
                 }
                 else
                     text = File.ReadAllText(path);
