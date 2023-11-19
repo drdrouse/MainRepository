@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>Файла не существует	19.11.2023 11:22:04	fefwefgwefwe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null	Строка:30  Столбец:21 Метод:Void Main(System.String[])</string>
+  <string>Это не квадратное уравнение	19.11.2023 11:22:53	fefwefgwefwe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null	Строка:43  Столбец:21 Метод:Void Main(System.String[])</string>
+  <string>В файле записаны не числа	19.11.2023 11:25:10	fefwefgwefwe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null	Строка:39  Столбец:21 Метод:Void Main(System.String[])</string>
+</ArrayOfString>

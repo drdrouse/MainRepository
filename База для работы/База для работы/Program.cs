@@ -15,6 +15,7 @@ namespace База_для_работы
             Operation summation = (num1, num2) => num1 + num2 ;
             Table(10, 10, multiplication, "Таблица умножения");
             Table(10, 10, summation, "Таблица сумирования");
+            Console.ReadKey();    
         }
 
         static void Table(int x, int y, Operation operation, string Name_Table)

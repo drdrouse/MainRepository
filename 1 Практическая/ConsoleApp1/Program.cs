@@ -4,6 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reflection;
+using System.Xml.Serialization;
+using System.Xml;
+using System.Runtime.Serialization;
 
 namespace ConsoleApp1
 {
@@ -11,13 +16,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+            SaveLog saveLogTXT = new SaveLogText();
+            SaveLog saveLogXML = new SaveLogXML();
+            SaveLog saveLogJSON = new SaveLogJSON();
             try
             {
                 string text;
                 double x1;
                 double x2;
-                string path = "D:\\Учёба\\Предметы\\Тестирование и отладка программного обеспечения\\Параметры.txt";
+                string path = "Параметры.txt";
                 if (File.Exists(path) == false)
                 {
                     throw new FileException("Файла не существует");
@@ -51,54 +58,41 @@ namespace ConsoleApp1
                     throw new DownZero("Нет корней");
                 }
             }
-            catch (FileException ex) { Console.WriteLine(ex.Message); }
-            catch (Zero ex) { Console.WriteLine(ex.Message); }
-            catch (DownZero ex) { Console.WriteLine(ex.Message); }
-            catch (NumberException ex) { Console.WriteLine(ex.Message); }
-            catch (ZeroNumberException ex) { Console.WriteLine(ex.Message); }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (FileException ex) {
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
+            catch (Zero ex) { 
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
+            catch (DownZero ex) { 
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
+            catch (NumberException ex) { 
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
+            catch (ZeroNumberException ex) { 
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
+            catch (Exception ex) { 
+                saveLogTXT.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogXML.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+                saveLogJSON.Save(ex, Assembly.GetExecutingAssembly().GetName().FullName.ToString());
+            }
             finally
             {
                 Console.WriteLine($"Уравнение решено верно.");
             }
         }
-    }
-
-    class NumberException : Exception
-    {
-        public NumberException(string message) : base(message)
-        {
-
-        }
-    }
-    class ZeroNumberException : Exception
-    {
-        public ZeroNumberException(string message) : base(message)
-        {
-
-        }
-    }
-    class FileException : Exception
-    {
-        public FileException(string message) : base(message)
-        {
-
-        }
-    }
-
-    class Zero : Exception
-    {
-        public Zero(string message) : base(message)
-        {
-
-        }
-    }
-
-    class DownZero : Exception
-    {
-        public DownZero(string message) : base(message)
-        {
-
-        }
-    }
+    }  
+ 
 }
